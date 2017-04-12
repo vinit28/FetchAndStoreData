@@ -10,7 +10,7 @@ import requests
 
 
 def getData():
-    url = 'https://api.nytimes.com/svc/mostpopular/v2/mostshared/all-sections/1.json?api-key=62c1e7a54140488a9d812383a49cf928'
+    url = 'https://api.nytimes.com/svc/mostpopular/v2/mostshared/all-sections/1.json?api-key=INSERT KEY'
     results = requests.get(url).json()
     data = results['results']
     return data
@@ -40,7 +40,7 @@ import sys
 
 con = mdb.connect(host = 'localhost', 
                   user = 'root', 
-                  passwd = 'dwdstudent2015', 
+                  passwd = 'YEAH RIGHT', 
                   charset='utf8', use_unicode=True);
 
 # Check for existing database
@@ -113,7 +113,7 @@ def createVariant():
 
 def getEntity(url):
     watson_url = "http://gateway-a.watsonplatform.net/calls/url/URLGetRankedNamedEntities"
-    api_key = '4b46c7859a7be311b6f9389b12504e302cac0a55'
+    api_key = 'KEY??
     headers = {
       "Accept": "application/json"
     }
@@ -133,7 +133,7 @@ def getEntity(url):
 
 def getSentiment(url):
     watson_url = "http://gateway-a.watsonplatform.net/calls/url/URLGetTextSentiment"
-    api_key = '4b46c7859a7be311b6f9389b12504e302cac0a55'
+    api_key = 'KEYY??'
     headers = {
       "Accept": "application/json"
     }
